@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Anagram {
 
-	public static ArrayList<String> getAnagrams(String s) {
-		ArrayList<String> result = new ArrayList<String>();
+	public static List<String> getAnagrams(String s) {
+		List<String> result = new ArrayList<String>();
 		if (s.length() == 1) {
 			result.add(s);
 			return result;
@@ -22,9 +22,9 @@ public class Anagram {
 	}
 
 	public static void main(String[] args) {
-		String s = "abs";
-		ArrayList<String> anagramList = getAnagrams(s);
-		for (int i = 0; i < anagramList.size(); i++) {
+		String s = "abc";
+		List<String> anagramList = getAnagrams(s);
+		for (int i = 1; i < anagramList.size(); i++) {
 			System.out.println(anagramList.get(i));
 		}
 	}
